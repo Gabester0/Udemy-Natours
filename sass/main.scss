@@ -1,7 +1,11 @@
+/*Right now we need to both run `npm run compile:sass` in command line to make sure SASS
+compiles into CSS and watches for changes && open another terminal and run `live-server` 
+to start a local server and live preview changes*/
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
-
+$color-grey-dark: #777;
+$color-white: #fff;
 *,
 *::before,
 *::after {
@@ -14,13 +18,16 @@ html {
     font-size: 62.5%;
 }
 
+
+
+
 body {
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
     font-weight: 400;
     /* font-size: 16px; */
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 3rem;
 }
 
@@ -56,7 +63,7 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
 }
@@ -138,8 +145,8 @@ body {
 }
 
 .btn--white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey-dark;
 }
 
 .btn::after {
@@ -156,7 +163,7 @@ body {
 }
 
 .btn--white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after{
