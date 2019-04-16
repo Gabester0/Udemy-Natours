@@ -12,12 +12,10 @@
 @import 'components/feature-box';
 @import 'components/card';
 @import 'components/story';
+@import 'components/bg-video';
+@import 'components/form';
 
 @import 'layout/grid';
 @import 'layout/header';
 
 @import 'pages/home';
-
-/*Right now we need to both run `npm run compile:sass` in command line to make sure SASS
-compiles into CSS and watches for changes && open another terminal and run `live-server` 
-to start a local server and live preview changes*/
