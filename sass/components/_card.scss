@@ -9,9 +9,6 @@
     
     &__side {
         height: 52rem;
-        color: $color-white;
-        font-size: 2rem;
-        background-color: orangered;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -27,7 +24,6 @@
         }
 
         &--back {
-            background-color:green;
             transform: rotateY(180deg);
 
             &--1 {
@@ -63,15 +59,15 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-                url('../img/nat-5.jpg');
+                url(../img/nat-5.jpg);
         }
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url('../img/nat-6.jpg');
+                url(../img/nat-6.jpg);
         }
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-                url('../img/nat-7.jpg');
+                url(../img/nat-7.jpg);
         }
     }
 
@@ -113,16 +109,16 @@
     &__details {
         padding: 3rem;
 
-        & ul {
+        ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
 
-            & li {
+            li {
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
-                color: $color-grey-dark-1;
+                // color: $color-grey-dark-1;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey-light-2;
@@ -131,11 +127,12 @@
         }
     }
 
-    ///Back Side Styling
+    ///Front Side Styling
     &__cta {
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 90%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
