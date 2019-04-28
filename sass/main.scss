@@ -7,14 +7,18 @@
 @import 'base/typogrophy';
 @import 'base/utilities';
 
+@import 'components/bg-video';
 @import 'components/button';
-@import 'components/composition.scss';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/story';
 
+@import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/navigation';
 
 @import 'pages/home';
-
-/*Right now we need to both run `npm run compile:sass` in command line to make sure SASS
-compiles into CSS and watches for changes && open another terminal and run `live-server` 
-to start a local server and live preview changes*/
